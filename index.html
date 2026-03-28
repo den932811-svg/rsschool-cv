@@ -1,21 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Denis Ivanov — Portfolio</title>
+    <!-- Font Awesome иконки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Подсветка кода -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+<div class="container">
     <header>
-        <h1>Ваше Имя Фамилия</h1>
-        <img src="avatar.jpg" alt="Avatar" class="avatar">
+        <nav class="navbar">
+            <span class="logo">Denis Ivanov</span>
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#welcome">Main</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>О себе</h2>
-            <p>Краткая информация о вас...</p>
+        <section id="welcome" class="welcome">
+            <h1>Hi!</h1>
+            <article class="welcome__article">
+                <figure>
+                    <img src="images/photo.jpg" alt="Моё фото" style="width:200px; border-radius:50%;">
+                    <figcaption><h3>I'm Denis</h3></figcaption>
+                </figure>
+                <h2>A beginner frontend developer</h2>
+            </article>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>My skills</h2>
+            <h3>Technologies</h3>
+            <div class="skills-box">
+                <ul class="hard-skills">
+                    <li class="skill">HTML (basic)</li>
+                    <li class="skill">Python (basic)</li>
+                    <li class="skill">VSCode</li>
+                </ul>
+                <div class="skills-levels">
+                    <div class="level-box"><div class="level html">20%</div></div>
+                    <div class="level-box"><div class="level python">30%</div></div>
+                    <div class="level-box"><div class="level vscode">10%</div></div>
+                </div>
+            </div>
+            <h3>Languages</h3>
+            <ul class="language-list">
+                <li>Russian (native)</li>
+                <li>English (A2, still learning)</li>
+            </ul>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2>Code examples</h2>
+            <h3>The subtraction function</h3>
+            <div class="example">
+                <pre><code class="language-javascript">
+function subtract(a, b) {
+    return a - b;
+}
+                </code></pre>
+            </div>
+            <h3>Educational projects</h3>
+            <div class="slider-container">
+                <button class="left" type="button"><i class="fas fa-chevron-left"></i> Back</button>
+                <div class="slider">
+                    <figure class="slide active">
+                        <figcaption><h4>Website on DLE (2011-2013)</h4></figcaption>
+                        <a href="#" target="_blank">
+                            <img src="images/project-dle.jpg" alt="Скриншот сайта на DLE">
+                        </a>
+                        <p>Creating and promoting a website with video clips, and monetizing it.</p>
+                        <p>Used: DLE, HTML, CSS</p>
+                    </figure>
+                    <figure class="slide">
+                        <figcaption><h4>Managing VK groups</h4></figcaption>
+                        <a href="#" target="_blank">
+                            <img src="images/project-vk.jpg" alt="Скриншот группы ВК">
+                        </a>
+                        <p>Creating and maintaining communities, filling with content.</p>
+                        <p>Skills: SMM, copywriting, audience analysis</p>
+                    </figure>
+                </div>
+                <button class="right" type="button">Forward <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2>Work experience</h2>
+            <ul class="edu-lists">
+                <li>2009–2011 — Website moderation and administration.</li>
+                <li>2011–2013 — Creation and promotion of DLE-based websites (website with video clips, advertising revenue).</li>
+                <li>In parallel, manage VKontakte groups and monetize them.</li>
+            </ul>
+        </section>
+
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <h3>Higher</h3>
+            <ul class="edu-lists">
+                <li>Higher - BSU (Coach-Teacher)</li>
+            </ul>
+            <h3>Courses</h3>
+            <ul class="edu-lists">
+                <li>English - level A2 (Alexander Bebris School). I continue my studies.</li>
+                <li>Independent learning of HTML, CSS, and Python</li>
+            </ul>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About me</h2>
+            <div class="video-box">
+                <p>
+                    I've been familiar with computers since childhood and always dreamed of becoming a programmer. In 2011, a friend and I created a website with movies using the DLE engine, and until 2013, I earned a decent income from it. I also created similar projects at the same time.
+                    After that, I gained experience creating and managing several VKontakte groups and earned some money from them.
+                    I'm a kind, responsive, and sociable person. I don't give up until the task is completed. I'm a team player and considerate of others' opinions.
+                    Currently, I have a strong desire to change my life, specifically, to change jobs. I'm ready to learn, make mistakes, improve, and continue learning!
+                    Interface development is a field I'm familiar with from my past experience, and one where I can fully express myself.
+                </p>
+            </div>
+            <h3>КMy contacts</h3>
+            <ul class="contacts-list">
+                <li>📍 Location:** Stary Oskol, Russia</li>
+                <li>✉️ Email: den932811@gmail.com</li>
+                <li>🐙 GitHub: <a href="https://github.com/den932811-svg" target="_blank">den932811-svg</a></li>
+                <li>💬 Telegram: <a href="https://t.me/denis_ivan28" target="_blank">@denis_ivan28</a></li>
+                <li>🎮 Discord: <a href="https://discord.com/" target="_blank">denis_2893</a></li>
+            </ul>
         </section>
     </main>
+    <footer>
+        <div class="footer-icons">
+            <div class="github-codewars-icons">
+                <a class="github-icon" href="https://github.com/den932811-svg" target="_blank">
+                    <img width="16" src="images/icons/github-icon.svg" alt="GitHub"> GitHub
+                </a>
+            </div>
+            <span>Март 2026</span>
+            <a class="rs-icon" href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
+                <img width="100" src="images/icons/rs_school_js.svg" alt="RS School">
+            </a>
+        </div>
+    </footer>
+</div>
 </body>
 </html>

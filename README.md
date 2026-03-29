@@ -1,1 +1,1 @@
-https://github.com/den932811-svg/rsschool-cv/tree/rsschool-cv-html
+https://den932811-svg.github.io/rsschool-cv/
